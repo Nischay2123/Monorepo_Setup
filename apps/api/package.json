@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@job-finder/shared-schemas": "*",
+    "@job-finder/shared-types": "*",
+    "express": "^5.0.0",
+    "zod": "^3.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@job-finder/eslint-config": "*",
+    "@job-finder/typescript-config": "*",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/cors": "^2.8.17",
+    "eslint": "^9.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
